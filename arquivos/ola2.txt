@@ -1,0 +1,1 @@
+Marcelo usando writeFileSync do fs node.js
