@@ -1,0 +1,16 @@
+{
+  "name": "xpress",
+  "version": "1.0.0",
+  "description": "Testes com express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marcelo Silva",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "moment": "^2.18.1"
+  }
+}
