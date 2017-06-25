@@ -1,0 +1,27 @@
+<%- include('cabecalho', {title: "Cadastro de usuários"}) %>
+
+<h1>Teste com MongoDB - usando templates parciais EJS</h1>
+
+<ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/usuarios">Usuários</a></li>
+    <li>Novo usuário</li>
+</ul>
+<h2>Cadastro de usuários</h2>
+
+<form action="/usuarios/novo" method="post">
+    <label for="Nome">Nome:</label>
+    <input type="text" name="nome" />
+    <br />
+    <label for="email">e-mail:</label>
+    <input type="email" name="email" />
+    <br />    
+    <label for="senha">Senha:</label>
+    <input type="password" name="senha" />
+     <br />  
+    <input type="checkbox" name="admin" />
+    <label for="admin">Administrador</label>
+    <input type="submit" />
+</form>
+
+<%- include('rodape') %>
