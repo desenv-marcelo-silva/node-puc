@@ -38,6 +38,14 @@ var usuariosRouter = require('./usuarios');
 // parte da requisição
 app.use('/usuarios', usuariosRouter);
 
+app.set('view engine', 'ejs');
+
+app.use('/estilos', express.static('./estilos'));
+
+app.use('/', (req, res, next) => {
+    res.render('index', {nome: "Express 2", outra: "Framework node."});
+});
+
 app.use('/cliente', (req, res, next) => {
     console.log(req.url);
     next();
@@ -62,4 +70,4 @@ app.get('/cliente/:acao/:id', (req, res) => {
 });
 app.listen(3003);
 
-console.log('Servidor rodando em 8008');
+console.log('Servidor rodando em 3003');
