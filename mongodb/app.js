@@ -1,7 +1,10 @@
 var express = require('express');
+var mongoose = require('mongoose');
 var app = express();
 
 var usuarios = require('./routes/usuarios.js');
+
+mongoose.connect("mongodb://localhost:27017/teste")
 
 app.set('view engine', 'ejs');
 

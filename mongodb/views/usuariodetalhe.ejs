@@ -1,0 +1,17 @@
+<%- include('cabecalho', {title: "Cadastro de usuários"}) %>
+
+<h1>Teste com MongoDB - usando templates parciais EJS</h1>
+
+<ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/usuarios">Usuários</a></li>
+    <li>Detalhe do usuário</li>
+</ul>
+<h2>Cadastro de usuários</h2>
+
+<p>Nome: <%= usuario.nome %></p>
+<p>e-mail: <%= usuario.email %></p>
+<p>Senha: <%= usuario.senha %></p>
+<p>Administrador?: <%= (usuario.administrador?'Sim':'Não') %></p>
+
+<%- include('rodape') %>

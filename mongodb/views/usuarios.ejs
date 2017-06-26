@@ -8,4 +8,13 @@
 </ul>
 <h2>Lista de usuários</h2>
 <p><a href="/usuarios/novo">Novo usuário</a></p>
+
+<ul>
+    <% usuarios.forEach( (usuario) => { %>
+        <li>
+            <a href="/usuarios/<%=usuario._id%>">
+            <%= usuario.nome %>
+        </li>
+    <% }) %>
+</ul>
 <%- include('rodape') %>
