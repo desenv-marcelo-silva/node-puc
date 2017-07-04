@@ -2,6 +2,12 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var urlEncodedParser = bodyParser.urlencoded({extended: false});
+var mongoose = require('mongoose');
+
+var adminAutoresRouter = require('./routers/adminAutoresRouter');
+
+app.use('/admin/autores', adminAutoresRouter); 
+mongoose.connect('mongodb://localhost:27017/blog');
 
 app.set("usuario", {nome: ''});
 
