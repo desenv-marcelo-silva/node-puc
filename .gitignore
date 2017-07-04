@@ -1,4 +1,4 @@
 .vscode
 frameworkExpress/node_modules
-blog
+blog/node_modules
 mongodb/node_modules
