@@ -7,6 +7,10 @@ footer {
     margin-bottom: 2em;
 }
 
+footer strong {
+    color: blue;
+}
+
 .navbar {
     background-color: #f8f8f8;
     border: 1px solid #e7e7e7;
